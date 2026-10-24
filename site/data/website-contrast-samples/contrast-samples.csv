@@ -1,0 +1,4 @@
+sample,foreground,background,contrast_ratio,checked_date,scope
+Body text,#1b2a2e,#fbfaf6,14.19,2026-10-08,SR Studio homepage computed colors (automated Chromium 154.0.8037.57 on Linux)
+Lead text,#46585c,#fbfaf6,7.15,2026-10-08,SR Studio homepage computed colors (automated Chromium 154.0.8037.57 on Linux)
+Primary button text,#ffffff,#0b5f5c,7.48,2026-10-08,SR Studio homepage computed colors (automated Chromium 154.0.8037.57 on Linux)
