@@ -1,0 +1,19 @@
+/*
+  X-Frame-Options: DENY
+  Access-Control-Allow-Origin: *
+  Strict-Transport-Security: max-age=86400
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://static.cloudflareinsights.com 'sha256-5BnZdFSRZkqBEuxNvr21Ka2lMo/59SRmz8cRyVPP/+o='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+
+/*.css
+  Cache-Control: public, max-age=14400, must-revalidate
+
+/*.svg
+  Cache-Control: public, max-age=14400, must-revalidate
+
+/*.png
+  Cache-Control: public, max-age=14400, must-revalidate
+
+/images/*.webp
+  Cache-Control: public, max-age=14400, must-revalidate
