@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="description" content="AI agent source prototypes for developer evaluation. Production security, integrations, provider costs and licence terms require review before client use.">
+  <title>SR Studio | AI Agent Source Prototypes</title>
+  
+  
+  
+  
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://razashane548-debug.github.io/sr-studio-site/">
+  <meta name="google-site-verification" content="mNTeZkcwz4j0Pxi5jJdOgPufoTEXySRPETjlaNjpEXU">
+  <meta name="google-site-verification" content="MEBMiKKqiqWXO6c5B-3XRRw8QtMrR40YypL9Apdpu_c">
+  <meta name="msvalidate.01" content="0E772CF6649A17D2D0FEBA16599F281F">
+
+  <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://razashane548-debug.github.io/sr-studio-site/">
+  
+  
+  <meta property="og:site_name" content="SR Studio AI Systems">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  
+  
+
+  <!-- Google Structured Data (Schema.org JSON-LD for Rich Snippets) -->
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SR Studio AI Agent Source Prototypes",
+  "applicationCategory": "BusinessApplication",
+  "creator": {
+    "@type": "Organization",
+    "name": "SR Studio"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Single Vertical AI License",
+      "price": "199",
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Complete Agency Arsenal License",
+      "price": "349",
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Enterprise Custom Scope (Unconfirmed)",
+      "price": "499",
+      "priceCurrency": "USD"
+    }
+  ]
+}</script>
+  <style>
+    :root {
+      --primary: #38bdf8;
+      --accent: #34d399;
+      --gold: #fbbf24;
+      --bg: #030712;
+      --card-bg: #0f172a;
+      --border: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text-main); min-height: 100vh; padding: 2rem; max-width: 1100px; margin: 0 auto; }
+    
+    .nav { display: flex; justify-content: space-between; align-items: center; padding-bottom: 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
+    .brand { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.5px; }
+    .brand span { color: var(--primary); }
+    .verified-badge { background: #064e3b; color: #6ee7b7; border: 1px solid #059669; padding: 0.35rem 0.8rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 700; }
+
+    .hero { text-align: center; margin-bottom: 3.5rem; }
+    .hero-badge { display: inline-block; background: #1e293b; color: var(--primary); padding: 0.3rem 1rem; border-radius: 9999px; font-size: 0.85rem; font-weight: 700; margin-bottom: 1rem; }
+    .hero h1 { font-size: 2.75rem; font-weight: 900; line-height: 1.2; margin-bottom: 1rem; }
+    .hero p { font-size: 1.15rem; color: var(--text-muted); max-width: 720px; margin: 0 auto 2rem; line-height: 1.6; }
+
+    .download-box { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); border: 1px solid #4338ca; border-radius: 1.25rem; padding: 2rem; margin-bottom: 3rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+    .dl-info h3 { font-size: 1.4rem; font-weight: 800; color: #f1f5f9; margin-bottom: 0.5rem; }
+    .dl-info p { font-size: 0.95rem; color: #cbd5e1; }
+    .dl-stats { display: flex; gap: 1.5rem; margin-top: 0.75rem; font-size: 0.85rem; color: var(--accent); }
+    
+    .btn-buy { background: var(--primary); color: #030712; font-size: 1.05rem; font-weight: 800; padding: 1rem 2rem; border-radius: 0.75rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: 0.2s; box-shadow: 0 4px 16px rgba(56, 189, 248, 0.4); border: none; cursor: pointer; }
+    .btn-buy:hover { background: #7dd3fc; }
+
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 3.5rem; }
+    .pricing-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 1.25rem; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
+    .pricing-card.featured { border-color: var(--primary); box-shadow: 0 0 24px rgba(56, 189, 248, 0.15); }
+    .card-popular { position: absolute; top: -12px; right: 24px; background: var(--primary); color: #030712; font-size: 0.75rem; font-weight: 800; padding: 0.25rem 0.75rem; border-radius: 9999px; text-transform: uppercase; }
+
+    .tier-name { font-size: 1.25rem; font-weight: 800; color: #f8fafc; margin-bottom: 0.5rem; }
+    .tier-desc { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+    .tier-price { font-size: 2.5rem; font-weight: 900; color: #f8fafc; margin-bottom: 0.25rem; }
+    .tier-price span { font-size: 1rem; color: var(--text-muted); font-weight: 600; }
+    .tier-price-inr { font-size: 1.1rem; color: var(--gold); font-weight: 700; margin-bottom: 1.5rem; }
+
+    .feature-list { list-style: none; margin-bottom: 2rem; flex: 1; }
+    .feature-list li { font-size: 0.9rem; color: #cbd5e1; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+    .feature-list li::before { content: "✓"; color: var(--accent); font-weight: 800; }
+
+    .bank-settlement-card { background: #090d16; border: 1px solid #334155; border-radius: 1.25rem; padding: 2rem; margin-top: 3rem; }
+    .bank-title { font-size: 1.25rem; font-weight: 800; color: var(--primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+    .bank-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+    .bank-field span { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; display: block; margin-bottom: 0.25rem; }
+    .bank-field strong { font-size: 1rem; color: #f1f5f9; }
+
+    a:focus-visible, button:focus-visible { outline: 3px solid #fbbf24; outline-offset: 4px; }
+    .skip-link { position: absolute; left: 1rem; top: -10rem; padding: 1rem; background: #f8fafc; color: #030712; z-index: 50; }
+    .skip-link:focus { top: 1rem; }
+    a { overflow-wrap: anywhere; }
+    .nav { gap: 1rem; flex-wrap: wrap; }
+    .dl-stats { flex-wrap: wrap; }
+    @media (max-width: 600px) { body { padding: 1rem; } .hero h1 { font-size: 2rem; } .pricing-grid { grid-template-columns: minmax(0,1fr); } .pricing-card,.download-box,.bank-settlement-card { padding: 1.25rem; } .btn-buy { max-width:100%; } }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  </style>
+<meta name="google-site-verification" content="dLWY0t8ZYx7uX2z-KUxDinApy89ZadJNG25p959Y3vY" />
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="nav">
+    <div class="brand">SR <span>STUDIO</span> AI ARSENAL</div>
+    <div style="display:flex; gap: 1rem; align-items:center; flex-wrap:wrap;">
+      <a href="https://srstudio.dpdns.org/" target="_blank" rel="noopener" style="color:var(--text-muted);text-decoration:none;font-size:0.85rem;font-weight:600;">← Accessibility Lab (srstudio.dpdns.org)</a>
+      <a href="#pricing" style="color:var(--primary);text-decoration:none;font-size:0.85rem;font-weight:700;">Passes &amp; Licences</a>
+      <a href="#source-access" style="color:var(--accent);text-decoration:none;font-size:0.85rem;font-weight:600;">Source access</a>
+      <div class="verified-badge">SOURCE PROTOTYPES: REVIEW REQUIRED</div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+  <section class="hero" aria-labelledby="page-title">
+    <div class="hero-badge">DEVELOPER SOURCE PROTOTYPES</div>
+    <h1 id="page-title">AI Agent Source Prototypes</h1>
+    <p>Source projects include conversational state machines, Express API examples, calculators and a provider-routing prototype. Payment and delivery examples include simulations. Do not deploy with real customer, patient or legal-case data before security review and integration testing.</p>
+  </section>
+
+  <section id="source-access" aria-label="Source package" class="download-box">
+    <div class="dl-info">
+      <h3>Source Package</h3>
+      <p>ZIP contains source, example configuration and test files. Included tests do not establish production readiness.</p>
+      <div class="dl-stats">
+        <span>ZIP: approximately 133.5 KiB</span>
+        <span>Test results not independently verified</span>
+        <span>Runtime compatibility requires testing</span>
+      </div>
+    </div>
+    <a class="btn-buy" href="#pricing">
+      Buy now: choose a source package
+    </a>
+  </section>
+
+  <section aria-labelledby="purchase-notice" class="bank-settlement-card" style="margin-bottom:2rem;"><h2 id="purchase-notice">Before you pay</h2><p>These are source prototypes, not a live managed service. This page does not automatically verify UPI payments or unlock files. Direct public product downloads are being withdrawn for private delivery. Delivery timing, applicable licence and refund terms must be confirmed before payment. No production, security or free-provider-usage guarantee is made.</p></section>
+<div class="pricing-grid" id="pricing">
+
+    <!-- Micro-License Tier 0 (₹99 Instant Chai-Pass) -->
+    <div class="pricing-card" style="border: 2px solid var(--gold); background: linear-gradient(180deg, #0f172a 0%, #2a1b06 100%);">
+      <div class="card-popular" style="background: var(--gold); color: #030712;">UNDER REVISION</div>
+      <div>
+        <h2 class="tier-name">Developer Micro Starter Pass</h2>
+        <div class="tier-desc">Gateway and voice state-machine source for developer evaluation. Confirm included files and licence terms before payment.</div>
+        <div class="tier-price">₹99 <span>INR</span></div>
+        <div class="tier-price-inr" style="color: var(--gold);">Previous source offer, under revision</div>
+        <ul class="feature-list">
+          <li>Provider-routing prototype</li>
+          <li>AuraVoice conversational state-machine prototype</li>
+          <li>Node.js / Express Lightweight Boilerplate</li>
+          <li>Provider account, quota and cost review required</li>
+          <li>Confirm personal/commercial licence terms before payment</li>
+        </ul>
+      </div>
+      <div role="status" style="border:1px solid #64748b; border-radius:8px; padding:1rem; margin-top:auto;">Offer under revision. Trial, monthly access and source-code terms are being confirmed. Payment for this card is paused.</div>
+    </div>
+
+    <!-- Micro-License Tier (₹499 Instant UPI) -->
+    <div class="pricing-card" style="border: 2px solid var(--accent); background: linear-gradient(180deg, #0f172a 0%, #06241a 100%);">
+      <div class="card-popular" style="background: var(--accent); color: #030712;">UNDER REVISION</div>
+      <div>
+        <h2 class="tier-name">Developer / Agency Starter Kit</h2>
+        <div class="tier-desc">Source starter kit for developer evaluation. Confirm delivery and any client-use rights before payment.</div>
+        <div class="tier-price">₹499 <span>INR</span></div>
+        <div class="tier-price-inr" style="color: var(--accent);">Previous source offer, under revision</div>
+        <ul class="feature-list">
+          <li>AuraVoice and LocalBizFlow source examples</li>
+          <li>Express route and webhook examples; integrations incomplete</li>
+          <li>Source archive includes tests; full suite not independently validated</li>
+          <li>Provider gateway example; fees and quotas may apply</li>
+          <li>Payment does not automatically unlock files on this page</li>
+        </ul>
+      </div>
+      <div role="status" style="border:1px solid #64748b; border-radius:8px; padding:1rem; margin-top:auto;">Offer under revision. Trial, monthly access and source-code terms are being confirmed. Payment for this card is paused.</div>
+    </div>
+
+    <!-- Tier 1 -->
+    <div class="pricing-card">
+      <div>
+        <h2 class="tier-name">Single Vertical License</h2>
+        <div class="tier-desc">Source prototype for a selected use case. Production deployment requires additional security and integration work.</div>
+        <div class="tier-price">$199 <span>USD</span></div>
+        <div class="tier-price-inr">₹16,500 INR. Indicative, confirm scope and terms.</div>
+        <ul class="feature-list">
+          <li>Choice of AuraVoice AI or EstateFlow AI</li>
+          <li>Express backend prototype; production hardening required</li>
+          <li>Domain Logic & State Machines</li>
+          <li>Included test files; pass status not verified here</li>
+          <li>Client/resale rights require written confirmation</li>
+        </ul>
+      </div>
+      <a class="btn-buy" style="background:#1e293b; color:#cbd5e1; justify-content:center;" href="mailto:kamarraza5633@gmail.com?subject=Inquiry:%20Single%20Vertical%20AI%20License&body=I%20would%20like%20to%20license%20a%20single%20vertical%20agent%20($199%20/%20Rs.16,500).">
+        Review $199 package details (email)
+      </a>
+    </div>
+
+    <!-- Tier 2 (Featured) -->
+    <div class="pricing-card featured">
+      <div class="card-popular">Source bundle</div>
+      <div>
+        <h2 class="tier-name">Complete Agency Arsenal</h2>
+        <div class="tier-desc">Source bundle including a provider gateway prototype. Provider access, limits, fees and suitability need separate verification.</div>
+        <div class="tier-price">$349 <span>USD</span></div>
+        <div class="tier-price-inr">₹29,000 INR. Indicative, confirm scope and terms.</div>
+        <ul class="feature-list">
+          <li>AuraVoice AI (MedSpa & Dental Receptionist)</li>
+          <li>EstateFlow AI (Real Estate Screening & LOI Engine)</li>
+          <li>LexiFlow AI (Legal Injury Intake & Retainer Engine)</li>
+          <li>LocalBizFlow WhatsApp/UPI workflow examples; not a connected service</li>
+          <li>Multi-provider gateway prototype</li>
+          <li>Master Arsenal PDF and scheduling utility examples</li>
+          <li>Deployment and resale rights require written confirmation</li>
+        </ul>
+      </div>
+      <a class="btn-buy" style="justify-content:center;" href="mailto:kamarraza5633@gmail.com?subject=Order:%20Complete%20Agency%20Arsenal%20($349)&body=I%20would%20like%20to%20order%20the%20Complete%20Agency%20Arsenal%20codebase%20bundle%20for%20$349%20/%20Rs.29,000%20INR.">
+        Review $349 package details (email)
+      </a>
+    </div>
+
+    <!-- Tier 3 -->
+    <div class="pricing-card">
+      <div>
+        <h2 class="tier-name">Enterprise Custom Scope (Unconfirmed)</h2>
+        <div class="tier-desc">Custom work is not an active packaged service. Scope, feasibility, seller capacity, delivery and support must be agreed separately before any order or payment.</div>
+        <div class="tier-price">$499 <span>USD</span></div>
+        <div class="tier-price-inr">₹41,500 INR. Indicative only, not a confirmed service offer.</div>
+        <ul class="feature-list">
+          <li>Potential source-bundle basis; final included files to be agreed</li>
+          <li>Requested webhook/CRM work requires a separate feasibility review</li>
+          <li>Branding/domain work is not included unless separately agreed</li>
+          <li>No handover session or priority service is promised</li>
+          <li>Support channel and availability are not yet confirmed</li>
+        </ul>
+      </div>
+      <a class="btn-buy" style="background:#1e293b; color:#cbd5e1; justify-content:center;" href="mailto:kamarraza5633@gmail.com?subject=Enterprise%20Setup%20License%20($499)&body=I%20would%20like%20to%20acquire%20the%20Enterprise%20Setup%20License%20for%20$499%20/%20Rs.41,500%20INR.">
+        Review custom scope (email)
+      </a>
+    </div>
+
+  </div>
+
+  <div class="bank-settlement-card" style="margin-top: 2rem; border-color: #0284c7; background: linear-gradient(180deg, #0f172a 0%, #082f49 100%);">
+    <div class="bank-title" style="color: #38bdf8;">🌐 Official Flagship Portal: SR Studio Accessible Apps</div>
+    <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.6;">
+      Explore our free, ad-free Android software ecosystem built for blind and low-vision users at <a href="https://srstudio.dpdns.org/" target="_blank" rel="noopener" style="color: #38bdf8; font-weight: 700; text-decoration: underline;">https://srstudio.dpdns.org/</a>.
+    </p>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <a href="https://srstudio.dpdns.org/apps/reshu/" target="_blank" rel="noopener" style="color: #6ee7b7; font-size: 0.85rem; font-weight: 700; text-decoration: none; padding: 0.4rem 0.8rem; background: #064e3b; border-radius: 6px;">📖 Reshu PDF Reader</a>
+      <a href="https://srstudio.dpdns.org/apps/reshcut/" target="_blank" rel="noopener" style="color: #93c5fd; font-size: 0.85rem; font-weight: 700; text-decoration: none; padding: 0.4rem 0.8rem; background: #1e3a8a; border-radius: 6px;">🎬 Reshcut Studio</a>
+      <a href="https://srstudio.dpdns.org/talkback-pdf-reader-hindi-guide" target="_blank" rel="noopener" style="color: #fde047; font-size: 0.85rem; font-weight: 700; text-decoration: none; padding: 0.4rem 0.8rem; background: #713f12; border-radius: 6px;">🗣️ TalkBack Reading Guide</a>
+      <a href="https://srstudio.dpdns.org/sitemap.xml" target="_blank" rel="noopener" style="color: #e2e8f0; font-size: 0.85rem; font-weight: 700; text-decoration: none; padding: 0.4rem 0.8rem; background: #334155; border-radius: 6px;">🗺️ Site Sitemap</a>
+    </div>
+  </div>
+
+  <div class="bank-settlement-card">
+    <div class="bank-title">🏛️ Settlement Banking Details</div>
+    <div class="bank-grid">
+      <div class="bank-field">
+        <span>BENEFICIARY</span>
+        <strong>Md Shane Raza</strong>
+      </div>
+      <div class="bank-field">
+        <span>BANK NAME</span>
+        <strong>State Bank of India (SBI)</strong>
+      </div>
+      <div class="bank-field">
+        <span>ACCOUNT NUMBER</span>
+        <strong>36052485839</strong>
+      </div>
+      <div class="bank-field">
+        <span>IFSC CODE</span>
+        <strong>SBIN0001062</strong>
+      </div>
+      <div class="bank-field">
+        <span>SWIFT / BIC (INTERNATIONAL)</span>
+        <strong>SBININBB</strong>
+      </div>
+      <div class="bank-field">
+        <span>BRANCH</span>
+        <strong>Latehar (Jharkhand, India)</strong>
+      </div>
+    </div>
+  </div>
+
+</main>
+</body>
+</html>
