@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SR Studio | Source sale terms, refunds and privacy</title><meta name="description" content="Terms, delivery, refunds and privacy for SR Studio developer-source projects sold through Stashq."><style>
+    :root {
+      --primary: #38bdf8;
+      --accent: #34d399;
+      --gold: #fbbf24;
+      --bg: #030712;
+      --card-bg: #0f172a;
+      --border: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text-main); min-height: 100vh; padding: 2rem; max-width: 1100px; margin: 0 auto; }
+
+    .nav { display: flex; justify-content: space-between; align-items: center; padding-bottom: 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
+    .brand { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.5px; }
+    .brand span { color: var(--primary); }
+    .verified-badge { background: #064e3b; color: #6ee7b7; border: 1px solid #059669; padding: 0.35rem 0.8rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 700; }
+
+    .hero { text-align: center; margin-bottom: 3.5rem; }
+    .hero-badge { display: inline-block; background: #1e293b; color: var(--primary); padding: 0.3rem 1rem; border-radius: 9999px; font-size: 0.85rem; font-weight: 700; margin-bottom: 1rem; }
+    .hero h1 { font-size: 2.75rem; font-weight: 900; line-height: 1.2; margin-bottom: 1rem; }
+    .hero p { font-size: 1.15rem; color: var(--text-muted); max-width: 720px; margin: 0 auto 2rem; line-height: 1.6; }
+
+    .download-box { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); border: 1px solid #4338ca; border-radius: 1.25rem; padding: 2rem; margin-bottom: 3rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+    .dl-info h3 { font-size: 1.4rem; font-weight: 800; color: #f1f5f9; margin-bottom: 0.5rem; }
+    .dl-info p { font-size: 0.95rem; color: #cbd5e1; }
+    .dl-stats { display: flex; gap: 1.5rem; margin-top: 0.75rem; font-size: 0.85rem; color: var(--accent); }
+
+    .btn-buy { background: var(--primary); color: #030712; font-size: 1.05rem; font-weight: 800; padding: 1rem 2rem; border-radius: 0.75rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: 0.2s; box-shadow: 0 4px 16px rgba(56, 189, 248, 0.4); border: none; cursor: pointer; }
+    .btn-buy:hover { background: #7dd3fc; }
+
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 3.5rem; }
+    .pricing-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 1.25rem; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
+    .pricing-card.featured { border-color: var(--primary); box-shadow: 0 0 24px rgba(56, 189, 248, 0.15); }
+    .card-popular { position: absolute; top: -12px; right: 24px; background: var(--primary); color: #030712; font-size: 0.75rem; font-weight: 800; padding: 0.25rem 0.75rem; border-radius: 9999px; text-transform: uppercase; }
+
+    .tier-name { font-size: 1.25rem; font-weight: 800; color: #f8fafc; margin-bottom: 0.5rem; }
+    .tier-desc { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+    .tier-price { font-size: 2.5rem; font-weight: 900; color: #f8fafc; margin-bottom: 0.25rem; }
+    .tier-price span { font-size: 1rem; color: var(--text-muted); font-weight: 600; }
+    .tier-price-inr { font-size: 1.1rem; color: var(--gold); font-weight: 700; margin-bottom: 1.5rem; }
+
+    .feature-list { list-style: none; margin-bottom: 2rem; flex: 1; }
+    .feature-list li { font-size: 0.9rem; color: #cbd5e1; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+    .feature-list li::before { content: "✓"; color: var(--accent); font-weight: 800; }
+
+    .bank-settlement-card { background: #090d16; border: 1px solid #334155; border-radius: 1.25rem; padding: 2rem; margin-top: 3rem; }
+    .bank-title { font-size: 1.25rem; font-weight: 800; color: var(--primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+    .bank-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+    .bank-field span { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; display: block; margin-bottom: 0.25rem; }
+    .bank-field strong { font-size: 1rem; color: #f1f5f9; }
+
+    a:focus-visible, button:focus-visible { outline: 3px solid #fbbf24; outline-offset: 4px; }
+    .skip-link { position: absolute; left: 1rem; top: -10rem; padding: 1rem; background: #f8fafc; color: #030712; z-index: 50; }
+    .skip-link:focus { top: 1rem; }
+    a { overflow-wrap: anywhere; }
+    .nav { gap: 1rem; flex-wrap: wrap; }
+    .dl-stats { flex-wrap: wrap; }
+    @media (max-width: 600px) { body { padding: 1rem; } .hero h1 { font-size: 2rem; } .pricing-grid { grid-template-columns: minmax(0,1fr); } .pricing-card,.download-box,.bank-settlement-card { padding: 1.25rem; } .btn-buy { max-width:100%; } }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+    .project-cover { display:block; width:100%; height:auto; border-radius:0.7rem; margin-bottom:1.25rem; }
+    .project-summary,.policy-copy { color:#cbd5e1; font-size:1rem; line-height:1.65; margin-top:1rem; margin-bottom:1.25rem; }
+    .policy-copy a { color:#7dd3fc; text-decoration:underline; }
+    .pricing-card .btn-buy { justify-content:center; text-align:center; min-height:48px; font-size:1rem; }
+    .feature-list li { align-items:flex-start; line-height:1.5; }
+    .pricing-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    @media(max-width:700px) { .pricing-grid { grid-template-columns:minmax(0,1fr); } }
+  main{max-width:820px;margin:auto;}h1{font-size:2rem;line-height:1.2;margin:1.5rem 0;}h2{font-size:1.35rem;margin-top:2rem;}p,li{line-height:1.7;color:#cbd5e1;margin:.8rem 0;}a{color:#7dd3fc;}ul{padding-left:1.5rem;}</style></head><body><a class="skip-link" href="#main-content">Skip to main content</a><header class="nav"><div class="brand">SR <span>STUDIO</span></div><a href="index.html" style="color:#7dd3fc;">Source projects</a></header><main id="main-content" tabindex="-1"><h1>Source sale terms, delivery, refunds and privacy</h1><p>Updated 22 November 2026. These terms describe the six separate developer-source products linked from this website. Read the selected Stashq product page and checkout before you pay.</p>
+<h2>What you buy</h2><p>Each project costs ₹999, including GST, as displayed at checkout. Each purchase covers one source-project ZIP, not all six. The ZIP includes the relevant source, local tests, dependency lockfile, buyer README/setup guide, third-party notices and licence. No APK, desktop installer, activation key, live managed service, subscription, custom integration, provider balance or ongoing support is included.</p><p>These are local prototypes or libraries. Passing local tests is not a production, security, legal, medical, financial or live-provider certification. Use fictional data until the relevant professional, privacy, security and integration reviews are complete. Hosting, provider accounts, quotas and usage charges are separate.</p>
+<h2>Who takes payment</h2><p>The Buy Now links open Stashq. Stashq is the merchant of record: the purchase, payment and tax invoice are with Stashq, under its <a href="https://www.stashq.in/terms-and-conditions">Terms &amp; Conditions</a>. This static website does not process or confirm payments. An ordinary transfer to a personal QR or the retained bank details does not create a Stashq purchase or automatically unlock a file.</p>
+<h2>Delivery and access</h2><p>Under Stashq's <a href="https://www.stashq.in/shipping-policy">digital delivery policy</a>, the delivery file unlocks after payment is confirmed. The confirmation screen and receipt email provide purchase access. Guest buyers can reopen their library with the purchase email and a one-time code. Keep that receipt and a private backup of your purchased files. A pending or unconfirmed payment is not confirmation of a completed purchase.</p><p>Download access is governed by Stashq's product-listing, removal and refund rules. We do not promise permanent hosting or lifetime support. No fixed number of seconds is guaranteed. If payment is captured but access fails, use the help/refund route on your Stashq purchase.</p>
+<h2>Licence</h2><p>The included licence allows use and modification for your own projects and client work. It does not allow selling, sharing, re-uploading or redistributing the source itself, edited or unchanged, as a source download, template or asset pack. Copyright is not transferred. Read LICENSE.txt in the ZIP for the full terms. SR Studio is the copyright holder's brand/trading designation, not a claim of incorporation.</p><p>Third-party components keep their own licences and notices. These prospective sale terms do not revoke a valid earlier licence grant or reduce third-party rights. Nothing here overrides rights required by applicable law.</p>
+<h2>Refund requests</h2><p>Each of these six products is configured for a 3-day refund-request window, displayed on its product page. Request a refund through the purchase in your Stashq library or the link in your receipt email, so the platform's response timer starts. Downloading does not itself remove eligibility to request a refund.</p><p>Stashq handles refunds. Its policy gives the creator 48 hours to respond; no response within that period results in a full automatic refund under that policy. A request is not an unconditional promise of approval. Delivery/file problems and payment failures remain covered regardless of the normal request window. An issued refund ends platform library access and the new purchase licence under Stashq's terms; valid earlier and third-party grants remain unaffected. Already downloaded copies cannot be remotely erased.</p><p>See the current <a href="https://www.stashq.in/refund-cancellation-policy">Stashq Refund &amp; Cancellation Policy</a> for eligibility, appeals and processing. We do not promise a fixed bank refund time.</p>
+<h2>Privacy and support</h2><p>This source-project page has no buyer login or payment form. Your browser requests the page and images from GitHub Pages. When you follow a Buy Now link, Stashq collects the purchase email and invoice/payment information required by its checkout. Its <a href="https://www.stashq.in/privacy-policy">Privacy Policy</a> applies there. Do not send passwords, API keys, real patient records, legal case files or other sensitive data with a support request.</p><p>For payment, delivery or refund help, open the purchase in your Stashq library. Stashq also provides <a href="https://www.stashq.in/contact-us">order support</a>. Source setup and known limits are documented in the buyer guides; custom development or ongoing support needs a separate agreement.</p>
+<h2>Services not offered yet</h2><p>The proposed ₹99 one-week trial and ₹499/month service are not live. Do not transfer money for them. They are not part of these source-project sales.</p><p><a href="index.html#pricing">Back to the six source projects</a></p><footer><p>© 2026 SR Studio.</p></footer></main></body></html>
